@@ -12,4 +12,6 @@ public partial class Lecturer
     public string LastName { get; set; } = null!;
 
     public DateOnly? DateOfBirth { get; set; }
+
+    public virtual ICollection<Class> Classes { get; set; } = new List<Class>();
 }
